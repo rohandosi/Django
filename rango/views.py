@@ -9,6 +9,6 @@ from django.shortcuts import render_to_response
 def index(request):
     context = RequestContext(request)
 
-    context_dict = {'bold message': "I am bold from the context"}
+    context_dict = {'boldmessage': "I am bold from the context"}
 
     return render_to_response("rango/index.html", context_dict, context)
