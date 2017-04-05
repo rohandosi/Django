@@ -12,3 +12,8 @@ def index(request):
     context_dict = {'boldmessage': "I am bold from the context"}
 
     return render_to_response("rango/index.html", context_dict, context)
+
+
+def login(request):
+    context = RequestContext(request)
+    return render_to_response("rango/login.html", context)
